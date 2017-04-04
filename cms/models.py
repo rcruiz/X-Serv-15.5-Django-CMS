@@ -2,6 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-class Pages(models.Model):
-    name = models.CharField(max_length=32)
+class Page(models.Model):
+    name = models.CharField(max_length=64)
     page = models.TextField()
