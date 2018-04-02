@@ -8,7 +8,7 @@ def mostrar_id(request, page_id):
         contenido = Page.objects.get(id=int(page_id))
         return HttpResponse(contenido.name + ' : ' + contenido.page)
     except Page.DoesNotExist:
-        return HttpResponse('Pagina no encontrada')
+        return HttpResponse('Página no encontrada')
 
 
 def mostrar_name(request, recurso):
